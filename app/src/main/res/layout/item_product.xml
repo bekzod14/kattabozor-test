@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginStart="4dp"
+        android:id="@+id/imgProduct"
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:layout_marginVertical="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_category_text"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/imgProduct"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Мобильные телефоны" />
+
+    <TextView
+        android:id="@+id/txtProductName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="6dp"
+        android:gravity="start"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgProduct"
+        app:layout_constraintTop_toBottomOf="@id/txtCategory"
+        tools:text="Смартфон iPhone 11 128GB" />
+
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:id="@+id/txtBrand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/txtCharacteristics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgProduct"
+        app:layout_constraintTop_toBottomOf="@id/txtProductName"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="@string/brand_formatter" />
+
+
+    <TextView
+        android:id="@+id/txtCharacteristics"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/txtMerchant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgProduct"
+        app:layout_constraintTop_toBottomOf="@id/txtBrand"
+        tools:text="@string/characteristics_formatter" />
+
+    <TextView
+        android:layout_marginBottom="6dp"
+        android:id="@+id/txtMerchant"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgProduct"
+        app:layout_constraintTop_toBottomOf="@id/txtCharacteristics"
+        tools:text="@string/merchant_formatter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
