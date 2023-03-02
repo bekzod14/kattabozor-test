@@ -31,7 +31,7 @@ class ProductsAdapter :
                 binding.root.context.getString(R.string.brand_formatter, data.brand)
             val sb = StringBuilder()
             data.attributes.forEach {
-                sb.append(it.name.plus(": ").plus(it.name).plus(", "))
+                sb.append(it.name.plus(": ").plus(it.value).plus(", "))
             }
             binding.txtCharacteristics.text =
                 binding.root.context.getString(R.string.characteristics_formatter, sb.toString())

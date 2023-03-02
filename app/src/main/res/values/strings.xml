@@ -4,8 +4,8 @@
     <string name="brand_formatter">Бренд: %s</string>
     <string name="characteristics_formatter">Характеристики: %s</string>
     <string name="merchant_formatter">Торговец: %s</string>
-    <string name="error">Торговец: %s</string>
-    <string name="message">Торговец: %s</string>
+    <string name="error">Error</string>
+    <string name="message">Message</string>
     <string name="retry">Retry</string>
     <string name="ok">OK</string>
 </resources>
